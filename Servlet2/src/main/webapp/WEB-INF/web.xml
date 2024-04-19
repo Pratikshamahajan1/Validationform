@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+  <servlet>
+    <description></description>
+    <display-name>Adduser</display-name>
+    <servlet-name>Adduser</servlet-name>
+    <servlet-class>com.demo.servlet.Adduser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Adduser</servlet-name>
+    <url-pattern>/Adduser</url-pattern>
+  </servlet-mapping>
+  <display-name>Servlet2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ValidateSeat</display-name>
+    <servlet-name>ValidateSeat</servlet-name>
+    <servlet-class>com.demo.servlet.ValidateSeat</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ValidateSeat</servlet-name>
+    <url-pattern>/ValidateSeat</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ViewUser</display-name>
+    <servlet-name>ViewUser</servlet-name>
+    <servlet-class>com.demo.servlet.ViewUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewUser</servlet-name>
+    <url-pattern>/ViewUser</url-pattern>
+  </servlet-mapping>
+</web-app>

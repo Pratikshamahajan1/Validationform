@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+      body {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+      h1{
+         text-align: center;
+      }
+       h3{
+         text-align: right;
+         margin-right: 200px;
+      }
+      * {
+         box-sizing: border-box;
+      }
+      form {
+         padding: 16px;
+         max-width: 800px;
+         margin-left: 20%;
+         background-color: rgb(255, 254, 195);
+      }
+      input[type=text]{
+         width: 100%;
+         padding: 15px;
+         margin: 5px 0 22px 0;
+         display: inline-block;
+         border: none;
+         background: #f1f1f1;
+      }
+      input[type=text]:focus {
+         background-color: #ddd;
+         outline: none;
+      }
+      hr {
+         border: 1px solid #f1f1f1;
+         margin-bottom: 25px;
+      }
+      .registerbtn {
+         background-color: #4CAF50;
+         color: white;
+         padding: 16px 20px;
+         margin: 8px 0;
+         border: none;
+         cursor: pointer;
+         width: 100%;
+         opacity: 0.9;
+      }
+      .registerbtn:hover {
+         opacity: 1;
+      }
+          
+      @media (max-width: 800px) {
+         form {
+            width: 100%;
+            margin-left: 0px;
+         }
+         
+      }
+   </style>
+</head>
+<body>
+   <h1 >Registration Form </h1>
+   <h3>USER LIST :<a href="ViewUser">view</a></h3>
+   <form method="post" action="Adduser">
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" required>
+      <label for="mobile"><b>Mobile</b></label>
+     <input type="text" placeholder=" Mobile No" name="mno" requires>
+      <label for="date"><b>Date</b></label>
+      <input type="text" placeholder="YYYY/MM/DD" name="date" required>
+      <label for="Seat_no"><b>Enter seat No</b></label>
+      <input type="text" placeholder="seat no" name="sno" required>
+      <hr>
+  	<input type="submit" value="submit" class="registerbtn">
+  	
+   </form>
+</body>
+</html>
